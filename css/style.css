@@ -1,0 +1,183 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+
+/* RESET
+================================================= */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* GLOBAL
+================================================= */
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #3e352f;
+  background: #ab996f;
+}
+
+p, a, h2 {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+/* NAV
+================================================= */
+
+#main-header {
+    background-image: url(../images/P2080768.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+    #main-title {
+        white-space:nowrap;
+        float: left;
+        font-size: 4.4em;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 24px 6%;
+        border: 3px solid;
+        text-align: center
+    }
+
+    #main-header ul {
+        white-space:nowrap;
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #main-header ul li {
+        display: inline-block;
+        font-size: 1.2em;
+        cursor: pointer;
+    }
+
+        #main-header ul li:nth-child(n+2) {
+            margin-left: 50px;
+        }
+
+        #main-header ul li img {
+            max-width: 80px;
+            height: auto;
+            display: block;
+            margin: 6px auto;
+        }
+
+
+@media screen and (max-width: 768px) {
+    #main-title {
+        font-size: 3em;
+        border: 2.4px solid;
+    }
+
+    #main-header ul li {
+        display: inline-block;
+        font-size: 1em;
+    }
+
+        #main-header ul li:nth-child(n+2) {
+            margin-left: 30px;
+        }
+
+        #main-header ul li img {
+            max-width: 60px;
+        }
+}
+
+/* MAIN CONTENT
+================================================= */
+
+#web-section {
+    background-color: #422;
+}
+
+#photo-section {
+    background-color: #3E352F;
+}
+
+#main-gallery {
+    float: left;
+    white-space:nowrap;
+
+
+    #main-gallery img {
+        border: 10px #f0f0f0 solid;
+        margin: 4px;
+        max-width: 90%;
+    }
+
+.img-big {
+    max-height: 60vh;
+    width: auto;
+}
+
+.img-small {
+    max-height: 28vh;
+    width: auto;
+}
+
+.img-top {
+    position: absolute
+}
+
+.section-title {
+    font-size: 2em;
+    padding: 90px 0 30px 50px;
+}
+
+/* FOOTER
+================================================= */
