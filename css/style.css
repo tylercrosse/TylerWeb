@@ -84,7 +84,7 @@ p, a, h2 {
         float: left;
         font-size: 4.4em;
         position: absolute;
-        top: 20%;
+        top: 30%;
         left: 50%;
         transform: translateX(-50%);
         padding: 24px 6%;
@@ -92,25 +92,25 @@ p, a, h2 {
         text-align: center
     }
 
-    #main-header ul {
+    .icons {
         white-space:nowrap;
         position: absolute;
-        bottom: 20%;
+        top: 50%;
         left: 50%;
         transform: translateX(-50%);
     }
 
-    #main-header ul li {
+    .icons li {
         display: inline-block;
         font-size: 1.2em;
         cursor: pointer;
     }
 
-        #main-header ul li:nth-child(n+2) {
+        .icons ul li:nth-child(n+2) {
             margin-left: 50px;
         }
 
-        #main-header ul li img {
+        .icons ul li img {
             max-width: 80px;
             height: auto;
             display: block;
@@ -142,42 +142,25 @@ p, a, h2 {
 ================================================= */
 
 #web-section {
-    background-color: #422;
+    background-color: #3e352f;
 }
 
-#photo-section {
-    background-color: #3E352F;
-}
-
-#main-gallery {
+.col-1 {
+    width: 30%;
     float: left;
-    white-space:nowrap;
-
-
-    #main-gallery img {
-        border: 10px #f0f0f0 solid;
-        margin: 4px;
-        max-width: 90%;
-    }
-
-.img-big {
-    max-height: 60vh;
-    width: auto;
 }
 
-.img-small {
-    max-height: 28vh;
-    width: auto;
+.col-2 {
+    width: 70%;
+    float: right;
 }
 
-.img-top {
-    position: absolute
+#profile-pic {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 3px solid #f0f0f0;
 }
 
-.section-title {
-    font-size: 2em;
-    padding: 90px 0 30px 50px;
-}
 
 /* FOOTER
 ================================================= */
