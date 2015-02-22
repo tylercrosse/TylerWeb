@@ -145,7 +145,8 @@ p, a, h2 {
 /* MAIN CONTENT
 ================================================= */
 
-#web-section {
+#main-content {
+    position: absolute;
     background-color: #3e352f;
     background-image: url(../images/pattern1-02.png);
     background-size: cover;
@@ -175,7 +176,9 @@ p, a, h2 {
     }
 
     .col-2 p {
+        background-color: #3e352f;
         margin: 0 30px 20px;
+        padding: 2px;
     }
 
     .col-2 .icons {
