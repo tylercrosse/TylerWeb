@@ -56,19 +56,42 @@ table {
 ================================================= */
 
 body {
-  font-family: 'Lato', sans-serif;
-  color: #3e352f;
-  background: #ab996f;
+    font-family: 'Lato', sans-serif;
+    color: #f0f0f0;
+    background: #3e352f;
+}
+
+h1 {
+    color: #3e352f;
 }
 
 p, a, h2 {
-  color: #f0f0f0;
-  text-decoration: none;
+    color: #f0f0f0;
+    text-decoration: none;
 }
 
 .full-height {
     height: 100vh;
 }
+
+.icons li {
+    white-space:nowrap;
+    display: inline-block;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+    .icons li:nth-child(n+2) {
+        margin-left: 50px;
+    }
+
+    .icons li img {
+        max-width: 80px;
+        height: auto;
+        display: block;
+        margin: 6px auto;
+    }
+
 
 /* NAV
 ================================================= */
@@ -92,31 +115,12 @@ p, a, h2 {
         text-align: center
     }
 
-    .icons {
-        white-space:nowrap;
+    #main-header .icons {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translateX(-50%);
     }
-
-    .icons li {
-        display: inline-block;
-        font-size: 1.2em;
-        cursor: pointer;
-    }
-
-        .icons ul li:nth-child(n+2) {
-            margin-left: 50px;
-        }
-
-        .icons ul li img {
-            max-width: 80px;
-            height: auto;
-            display: block;
-            margin: 6px auto;
-        }
-
 
 @media screen and (max-width: 768px) {
     #main-title {
@@ -143,23 +147,42 @@ p, a, h2 {
 
 #web-section {
     background-color: #3e352f;
+    background-image: url(../images/pattern1-02.png);
+    background-size: cover;
 }
 
 .col-1 {
     width: 30%;
     float: left;
+    padding: 5%;
 }
 
-.col-2 {
-    width: 70%;
-    float: right;
-}
-
-#profile-pic {
+    #profile-pic {
     max-width: 100%;
     border-radius: 50%;
     border: 3px solid #f0f0f0;
+    }
+
+
+.col-2 {
+    width: 60%;
+    float: right;
 }
+
+    .col-2 h2 {
+        font-size: 2.4em;
+        margin: 30px 30px 20px 30px;
+    }
+
+    .col-2 p {
+        margin: 0 30px 20px;
+    }
+
+    .col-2 .icons {
+        text-align: center;
+    }
+
+
 
 
 /* FOOTER
