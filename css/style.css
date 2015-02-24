@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,700|Merriweather:300italic);
 
 /* RESET
 ================================================= */
@@ -57,17 +57,21 @@ table {
 
 body {
     font-family: 'Lato', sans-serif;
+    font-weight: 700;
     color: #f0f0f0;
     background: #3e352f;
 }
 
 h1 {
     color: #3e352f;
+    font-weight: 300;
 }
 
-p, a, h2 {
+p, a, h3 {
     color: #f0f0f0;
     text-decoration: none;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
 }
 
 .full-height {
@@ -93,13 +97,15 @@ p, a, h2 {
     }
 
 
-/* NAV
+/* HERO
 ================================================= */
 
-#main-header {
+#main-header-bg {
+    z-index: 0;
     background-image: url(../images/P2080768.jpg);
     background-size: cover;
     width: 100%;
+    position: fixed;
 }
 
     #main-title {
@@ -142,50 +148,156 @@ p, a, h2 {
         }
 }
 
-/* MAIN CONTENT
+/* ABOUT SECTION
+================================================= */
+#main-content {
+    z-index: 10;
+    position: relative;
+}
+
+#main-content h2 {
+        font-size: 2.6em;
+        margin-bottom: 30px;
+    }
+
+#about-section {
+    background-color: #3e352f;
+    position: relative;
+    width: 100%;
+    padding: 10% 0;
+}
+    #about-section h2 {
+        margin-left: 5%;
+    }
+
+    #about-section ul {
+        display: inline-block;
+    }
+
+    #about-section img {
+        display: block;
+        min-width: 200px;
+        max-width: 25%;
+        border-radius: 50%;
+        border: 3px solid #f0f0f0;
+        margin: 5%;
+        float: left;
+    }
+
+    #about-text {
+        margin: 14.5% 5%;
+        font-size: 1.4em;
+    }
+
+@media screen and (max-width: 768px) {
+    #about-text {
+        font-size: 1em;
+    }
+
+    #about-section img,
+    #about-section p {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+        float: none;
+    }
+
+    #about-section img {
+        margin-bottom: 5%;
+    }
+}
+
+/* SKILL SECTION
 ================================================= */
 
-#main-content {
-    position: absolute;
-    background-color: #3e352f;
+#skill-section {
+    padding: 5% 0;
+    background-color: rgba(62,53,47,0.8);
     background-image: url(../images/pattern1-02.png);
     background-size: cover;
+    height: 320px;
 }
 
-.col-1 {
-    width: 30%;
-    float: left;
-    padding: 5%;
-}
-
-    #profile-pic {
-    max-width: 100%;
-    border-radius: 50%;
-    border: 3px solid #f0f0f0;
-    }
-
-
+.col-1,
 .col-2 {
-    width: 60%;
-    float: right;
+    width: 40%;
+    float: left;
+    padding: 40px 5%;
 }
 
-    .col-2 h2 {
-        font-size: 2.4em;
-        margin: 30px 30px 20px 30px;
+    #skill-section h3 {
+        margin: 20px 0 8px 0;
     }
 
-    .col-2 p {
-        background-color: #3e352f;
-        margin: 0 30px 20px;
-        padding: 2px;
+    .bar-graph {
+        width: 100%;
+        border: 1px solid #f0f0f0;
+        background-color: rgba(62,53,47,0.7);
+        height: 10px;
+        border-radius: 4px;
     }
 
-    .col-2 .icons {
+        .bar-inner {
+            height: 10px;
+            border-radius: 4px;
+        }
+
+        #illustrator-bar {
+            width: 80%;
+            background-color: #e47f27;
+        }
+
+        #photoshop-bar {
+            width: 90%;
+            background-color: #81cff5;
+        }
+
+        #sketch-bar {
+            width:70%;
+            background-color: #f6bf33;
+        }
+
+        #html-bar {
+            width: 90%;
+            background-color: #e44d26;
+        }
+
+        #css-bar {
+            width: 85%;
+            background-color: #0070bc;
+        }
+
+        #js-bar {
+            width: 30%;
+            background-color: #d6ba32;
+        }
+
+@media screen and (max-width: 768px) {
+    #skill-section h2 {
+        font-size: 1.6em;
+    }
+}
+
+/* CONTACT SECTION
+================================================= */
+
+#contact-section {
+    background-color: #3e352f;
+}
+
+    .icons {
         text-align: center;
     }
 
-
+@media screen and (max-width: 768px) {
+    p {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        text-align: center
+    }
+}
 
 
 /* FOOTER
